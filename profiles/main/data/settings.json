@@ -1,0 +1,151 @@
+{
+  // --- 嵌入式核心引擎区 ---
+  // 告诉 'keil-vscode' 插件, Keil MDK for ARM 的安装路径在哪，这是连接灵魂的第一步！
+  "keil-vscode.MDK.Uv4Path": "D:\\5、专业软件\\2、keil5\\keil\\UV4\\UV4.exe",
+
+  // 同上, 这是为 C51 单片机开发指明道路。MDK 和 C51 两手抓，两手都要硬！💪
+  "keil-vscode.C51.Uv4Path": "D:\\5、专业软件\\2、keil5\\keil\\UV4\\UV4.exe",
+
+  // 这是另一位好帮手 'Keil Assistant' 插件的路径，双重保险，确保 Keil 老家地址无人不知！
+  "KeilAssistant.C51.Uv4Path": "D:\\5、专业软件\\2、keil5\\keil\\UV4\\UV4.exe",
+
+  // --- 烧录 & 调试装备区 ---
+  // EIDE 插件的 ST-Link 烧录工具路径，一键下载代码全靠它！${userRoot} 用得好，非常灵活！
+  "EIDE.STLink.ExePath": "${userRoot}\\.eide\\tools\\st_cube_programer\\bin\\STM32_Programmer_CLI.exe",
+
+  // 【高级操作】让 ST-Link 配置在所有 VS Code Profile (配置文件) 中都生效，保持体验一致！
+  "workbench.settings.applyToAllProfiles": ["EIDE.STLink.ExePath"],
+
+  // EIDE 插件的 J-Link 工具目录，ST-Link 的好兄弟，各种芯片调试通吃！
+  "EIDE.JLink.InstallDirectory": "${userRoot}/.eide/tools/jlink",
+
+  // --- 编译器军火库 ---
+  // 开源界的明星编译器 GCC for ARM 的老巢，编译开源项目就用它！
+  "EIDE.ARM.GCC.InstallDirectory": "${userRoot}/.eide/tools/gcc_arm",
+
+  // ⚠️【友情提示】这里应该是 Keil 的 'TOOLS.INI' 配置文件路径，而不是 .exe 哦！它记录了你的许可证信息。
+  // 推荐修改为: "D:\\5、专业软件\\2、keil5\\keil\\TOOLS.INI"
+  "EIDE.ARM.INI.Path": "D:\\software\\2-keil5\\51\\UV4\\UV4.exe",
+
+  // Keil 商业编译器 ARMCC v5 的安装目录，编译 Keil 工程的“官方指定用车”！
+  "EIDE.ARM.ARMCC5.InstallDirectory": "D:\\software\\2-keil5\\ARM\\ARMCC",
+
+  // --- 个性化美学区 (你的代码世界由你定义！) ---
+  // 设定一个酷酷的吸血鬼主题 'Dracula'，代码也要有范儿！🧛
+  "workbench.colorTheme": "Dracula Theme",
+
+  // 使用 'vscode-icons' 图标主题，让文件浏览器里的图标生动起来，告别单调！🎨
+  "workbench.iconTheme": "vscode-icons",
+
+  // --- 远程开发 & 云端操作区 ---
+  // SSH 远程服务器配置，一看就是经常在 Linux 服务器上“云顶编程”的大佬！☁️
+  "remote.SSH.remotePlatform": {
+    "192.168.1.4": "linux",
+    "192.168.124.15": "linux",
+    "192.168.14.70": "linux",
+    "192.168.14.49": "linux"
+  },
+
+  // --- 语言 & 辅助功能区 ---
+  // 开启编辑器对辅助功能的支持，让 VS Code 对所有人都友好。❤️
+  "editor.accessibilitySupport": "on",
+
+  // [python] 区域内的设置，只对 Python 文件生效，做到精准打击！
+  "[python]": {
+    // 在对比文件差异时，不要忽略行尾的空格，这在 Python 里可能很重要！
+    "diffEditor.ignoreTrimWhitespace": false,
+    // 不要在编辑器里显示颜色代码旁边的小色块，保持界面清爽。
+    "editor.defaultColorDecorators": "never"
+  },
+
+  // 告诉 'doxdocgen' (文档注释生成器)：“小声点，别在我的命令面板里喊啦！”
+  "doxdocgen.generic.commandSuggestion": false,
+
+  // --- 丝滑手感 & 自动化专区 (重点表扬！) ---
+  // 【懒人福音】文件自动保存！在你停止输入一小会儿后自动存盘，彻底告别 "Ctrl+S" 焦虑症！
+  "files.autoSave": "afterDelay",
+
+  // 【乱码克星】自动猜测文件编码，妈妈再也不用担心我打开中文注释是“锟斤拷”了！
+  "files.autoGuessEncoding": true,
+
+  // 在文件浏览器等列表区域开启“丝滑滚动”，德芙巧克力般的纵享丝滑~
+  "workbench.list.smoothScrolling": true,
+
+  // 【视觉盛宴】让光标的移动拥有平滑的动画效果，每一次跳动都如此优雅。
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  // 编辑器内的滚动也必须是丝滑的！
+  "editor.smoothScrolling": true,
+
+  // 光标不再是生硬地闪烁，而是像呼吸灯一样平滑地闪动。
+  "editor.cursorBlinking": "smooth",
+
+  // 【视力保护】允许使用 `Ctrl+鼠标滚轮` 缩放代码字体，非常实用！
+  "editor.mouseWheelZoom": true,
+
+  // 【代码洁癖三件套】① 粘贴代码时，自动格式化！
+  "editor.formatOnPaste": true,
+  // 【代码洁癖三件套】② 打字时，自动格式化！(比如输入分号后自动调整缩进)
+  "editor.formatOnType": true,
+  // 【代码洁P三件套】③ 保存文件时，自动格式化！保持代码永远整洁！
+  "editor.formatOnSave": true,
+
+  // 【长句福音】自动换行！再也不用疯狂拖动横向滚动条了，你的脖子会感謝你。
+  "editor.wordWrap": "on",
+
+  // 显示配对括号之间的引导线，嵌套再多层也一目了然！
+  "editor.guides.bracketPairs": true,
+
+  // (你太细心了！这个确实在新版 VS Code 里默认开启了，所以注释掉是正确的操作！)
+  //"editor.bracketPairColorization.enabled": true,
+
+  // 当代码片段 (snippet) 出现时，不要阻止其他快速建议 (比如变量名) 的显示，我全都要！
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  // 【智能回车】只有在你真正想接受建议时，按 Enter 键才有效，避免误触！
+  "editor.acceptSuggestionOnEnter": "smart",
+
+  // 优先从“最近使用过”的建议中进行选择，更懂你的心。
+  "editor.suggestSelection": "recentlyUsed",
+
+  // 使用自定义样式的对话框，让弹窗也变得更美观。
+  "window.dialogStyle": "custom",
+
+  // 在滚动条的概览区域显示所有断点的位置，方便快速定位 Debug 位置。🐞
+  "debug.showBreakpointsInOverviewRuler": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.path": "K:\\git\\Git\\bin\\git.exe",
+  "kilo-code.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show",
+    "python kalman_filter_image_detection.py"
+  ],
+  "kilo-code.deniedCommands": [],
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  }
+}
