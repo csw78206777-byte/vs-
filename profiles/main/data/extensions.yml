@@ -1,14 +1,14 @@
 disabled:
-  - id: cl.keil-assistant
-    uuid: a3229c35-aa81-4eff-90d6-309ad15f1e70
   - id: cl.eide
     uuid: 2fad1dcf-fc6a-48b7-b9d6-4c42af6ffc00
+  - id: cl.keil-assistant
+    uuid: a3229c35-aa81-4eff-90d6-309ad15f1e70
   - id: dan-c-underwood.arm
     uuid: 99e3906b-d232-48f2-902a-fcba762add97
-  - id: formulahendry.code-runner
-    uuid: a6a0c5b2-d078-4bf5-a9ee-4e37054414b3
   - id: GitHub.copilot
     uuid: 00000000-0000-0000-0000-000000000000
+  - id: formulahendry.code-runner
+    uuid: a6a0c5b2-d078-4bf5-a9ee-4e37054414b3
   - id: GitHub.copilot-chat
     uuid: 00000000-0000-0000-0000-000000000000
   - id: jiyun-tech.keil-vscode
