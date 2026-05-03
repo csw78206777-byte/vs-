@@ -30,20 +30,26 @@
   // Keil 商业编译器 ARMCC v5 的安装目录，编译 Keil 工程的“官方指定用车”！
   "EIDE.ARM.ARMCC5.InstallDirectory": "D:\\software\\2-keil5\\ARM\\ARMCC",
 
-  // --- 个性化美学区 (你的代码世界由你定义！) ---
-  // 设定一个酷酷的吸血鬼主题 'Dracula'，代码也要有范儿！🧛
-  "workbench.colorTheme": "Dracula Theme",
-
   // 使用 'vscode-icons' 图标主题，让文件浏览器里的图标生动起来，告别单调！🎨
   "workbench.iconTheme": "vscode-icons",
-
   // --- 远程开发 & 云端操作区 ---
   // SSH 远程服务器配置，一看就是经常在 Linux 服务器上“云顶编程”的大佬！☁️
   "remote.SSH.remotePlatform": {
     "192.168.1.4": "linux",
     "192.168.124.15": "linux",
     "192.168.14.70": "linux",
-    "192.168.14.49": "linux"
+    "192.168.14.49": "linux",
+    "192.168.225.49": "linux",
+    "192.168.52.49": "linux",
+    "192.168.180.49": "linux",
+    "192.168.96.49": "linux",
+    "192.168.61.49": "linux",
+    "192.168.31.69": "linux",
+    "192.168.186.129": "linux",
+    "192.168.31.31": "linux",
+    "192.168.186.133": "linux",
+    "192.168.31.204": "linux",
+    "192.168.2.4": "linux",
   },
 
   // --- 语言 & 辅助功能区 ---
@@ -55,7 +61,7 @@
     // 在对比文件差异时，不要忽略行尾的空格，这在 Python 里可能很重要！
     "diffEditor.ignoreTrimWhitespace": false,
     // 不要在编辑器里显示颜色代码旁边的小色块，保持界面清爽。
-    "editor.defaultColorDecorators": "never"
+    "editor.defaultColorDecorators": "never",
   },
 
   // 告诉 'doxdocgen' (文档注释生成器)：“小声点，别在我的命令面板里喊啦！”
@@ -114,38 +120,189 @@
   // 在滚动条的概览区域显示所有断点的位置，方便快速定位 Debug 位置。🐞
   "debug.showBreakpointsInOverviewRuler": true,
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "git.path": "K:\\git\\Git\\bin\\git.exe",
   "kilo-code.allowedCommands": [
-    "npm test",
-    "npm install",
-    "tsc",
     "git log",
     "git diff",
     "git show",
-    "python kalman_filter_image_detection.py"
+    "python kalman_filter_image_detection.py",
+    "npm test",
+    "npm install",
+    "tsc",
+    "sudo rm -f /etc/systemd/system/v2raya.service /usr/local/bin/v2raya",
+    "sudo",
+    "sudo rm",
   ],
   "kilo-code.deniedCommands": [],
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
-      "icon": "terminal-powershell"
+      "icon": "terminal-powershell",
     },
     "Command Prompt": {
       "path": [
         "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
+        "${env:windir}\\System32\\cmd.exe",
       ],
       "args": [],
-      "icon": "terminal-cmd"
+      "icon": "terminal-cmd",
     },
     "Git Bash": {
-      "source": "Git Bash"
+      "source": "Git Bash",
     },
     "Windows PowerShell": {
-      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    }
-  }
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-NoExit", "-Command", "& { . $PROFILE }"],
+    },
+  },
+  "roo-cline.allowedCommands": [
+    "git log",
+    "git diff",
+    "git show",
+    "npm test",
+    "npm install",
+    "tsc",
+  ],
+  "roo-cline.deniedCommands": [],
+  "fittencode.languagePreference.displayPreference": "zh-cn",
+  "fittencode.languagePreference.commentPreference": "zh-cn",
+  "plantuml.jarArgs": [],
+  "plantuml.jar": "K:\\流程图\\plantuml-1.2025.4\\plantuml-1.2025.4\\plantuml.jar",
+  "mcpServers": {},
+  "yaml.schemas": {
+    "file:///c%3A/Users/%E9%99%88%E6%98%93/.vscode/extensions/continue.continue-1.2.4-win32-x64/config-yaml-schema.json": [
+      ".continue/**/*.yaml",
+    ],
+  },
+  "Codegeex.License": "",
+  "Codegeex.Privacy": false,
+  "Codegeex.CompletionDelay": 0.5,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "projectManager.sortList": "Recent",
+  "editor.minimap.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
+  "workbench.secondarySideBar.showLabels": false,
+  "claudeCode.preferredLocation": "panel",
+  "git.enableSmartCommit": true,
+  "kilo-code.debug": false,
+  "workbench.editor.empty.hint": "hidden",
+  // ========== LaTeX Workshop 编译工具配置 ==========
+  // 定义 LaTeX 编译器、参考文献处理器的具体命令和参数
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      // pdflatex: 基础 PDF 编译器，将 .tex 文件编译成 PDF
+      // 命令路径：D:\software\latex\2026\bin\windows\pdflatex.exe
+      "command": "D:\\software\\latex\\2026\\bin\\windows\\pdflatex.exe",
+      "args": [
+        "-synctex=1", // 启用 SyncTeX（反向搜索：PDF <-> 源代码）
+        "-interaction=nonstopmode", // 遇到错误不暂停，继续编译
+        "-file-line-error", // 显示详细的错误位置信息
+        "%DOCFILE%", // 要编译的文件名（占位符）
+      ],
+    },
+    {
+      "name": "xelatex",
+      // xelatex: 高级编译器，支持 Unicode 和 OpenType 字体，适合中文排版
+      // 命令路径：D:\software\latex\2026\bin\windows\xelatex.exe
+      "command": "D:\\software\\latex\\2026\\bin\\windows\\xelatex.exe",
+      "args": [
+        "-synctex=1", // 启用 SyncTeX
+        "-interaction=nonstopmode", // 非交互模式
+        "-file-line-error", // 显示错误位置
+        "%DOCFILE%", // 要编译的文件
+      ],
+    },
+    {
+      "name": "bibtex",
+      // bibtex: 参考文献处理器，生成 .bbl 文件（包含格式化的参考文献列表）
+      // 命令路径：D:\software\latex\2026\bin\windows\bibtex.exe
+      "command": "D:\\software\\latex\\2026\\bin\\windows\\bibtex.exe",
+      "args": ["%DOCFILE%"], // 要处理的文件
+    },
+  ],
+  // ========== LaTeX 编译方案（配方）==========
+  // 定义不同的编译流程，可以在 VSCode 中选择使用
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "xelatex",
+      // 单步编译方案：仅运行一次 xelatex，适合快速测试
+      "tools": ["xelatex"],
+    },
+    {
+      "name": "pdflatex",
+      // 单步编译方案：仅运行一次 pdflatex，适合简单文档
+      "tools": ["pdflatex"],
+    },
+    {
+      "name": "xe->bib->xe->xe",
+      // 完整编译流程：xelatex → bibtex → xelatex → xelatex
+      // 用途：有参考文献的中文文档（包含交叉引用）
+      // 原理：第一次xelatex生成 .aux；bibtex读取 .aux 生成 .bbl；后续xelatex整合引用
+      "tools": ["xelatex", "bibtex", "xelatex", "xelatex"],
+    },
+    {
+      "name": "pdf->bib->pdf->pdf",
+      // 完整编译流程：pdflatex → bibtex → pdflatex → pdflatex
+      // 用途：有参考文献的英文文档（包含交叉引用）
+      // 原理：同上，但使用 pdflatex 作为编译器
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"],
+    },
+  ],
+  // ========== LaTeX 辅助功能配置 ==========
+  // 编译完成后自动清理的临时文件类型
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux", // 辅助文件
+    "*.bbl", // 参考文献列表（由bibtex生成）
+    "*.blg", // bibtex日志
+    "*.idx", // 索引文件
+    "*.ind", // 生成的索引
+    "*.lof", // 图表列表
+    "*.lot", // 表格列表
+    "*.out", // 目录和超链接信息
+    "*.toc", // 目录文件
+    "*.acn", // 缩写列表
+    "*.acr", // 缩写数据
+    "*.alg", // 算法列表
+    "*.glg", // 术语表日志
+    "*.glo", // 术语表数据
+    "*.gls", // 生成的术语表
+    "*.ist", // 索引样式
+    "*.fls", // File List（latexmk生成）
+    "*.log", // LaTeX编译日志
+    "*.fdb_latexmk", // latexmk数据库
+  ],
+  // PDF 查看方式："tab" 在编辑器标签页显示
+  "latex-workshop.view.pdf.viewer": "tab",
+  // 自动编译触发方式："onFileChange" 文件保存时自动编译
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  // 在右键菜单中显示LaTeX相关操作
+  "latex-workshop.showContextMenu": true,
+  // 编译过程中不显示错误提示（避免弹窗干扰）
+  "latex-workshop.message.error.show": false,
+  // 编译过程中不显示警告提示
+  "latex-workshop.message.warning.show": false,
+  // 启用代码补全：从加载的LaTeX包中自动补全命令和环境
+  "latex-workshop.intellisense.package.enabled": true,
+  // 自动清理设置："never" 永远不自动清理（手动管理临时文件）
+  "latex-workshop.latex.autoClean.run": "never",
+  // 默认编译方案："lastUsed" 使用上一次使用过的方案
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  // SyncTeX反向搜索快捷键："double-click" 双击PDF定位源码
+  "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+  "terminal.integrated.commandsToSkipShell": [
+    "kilo-code.new.agentManagerOpen",
+    "kilo-code.new.agentManager.showTerminal",
+  ],
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "kilo-code.new.browserAutomation.useSystemChrome": true,
+  "kilo-code.new.browserAutomation.enabled": true,
+  "kilo-code.new.autocomplete.enableChatAutocomplete": true,
+  "roo-cline.debug": false,
+  "workbench.browser.enableChatTools": true,
+  "gitee.access_token": "2c43b9501338846845906f780ced1c3d",
+  "gitee.gist": "29opzrbw4a5mf6c8v1u0j60",
 }

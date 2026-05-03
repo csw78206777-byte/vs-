@@ -1,0 +1,19 @@
+// 将键绑定放在此文件中以覆盖默认值
+[
+  {
+    "key": "alt+1",
+    "command": "extension.varTranslation"
+  },
+  {
+    "key": "shift+alt+t",
+    "command": "-extension.varTranslation"
+  },
+  {
+    "key": "alt+1",
+    "command": "extension.var-translate-en"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-extension.var-translate-en"
+  }
+]
