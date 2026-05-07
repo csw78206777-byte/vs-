@@ -1,4 +1,6 @@
 disabled:
+  - id: Anthropic.claude-code
+    uuid: 00000000-0000-0000-0000-000000000000
   - id: mcu-debug.debug-tracker-vscode
     uuid: bd8507f9-4b21-4877-b045-1f20471fe96e
   - id: RooVeterinaryInc.roo-cline
@@ -10,8 +12,6 @@ enabled:
     uuid: 1b747f06-3789-4ebd-ac99-f1fe430c3347
   - id: Alex-Chen.gitee-code-settings-sync
     uuid: 5a1f076f-40e6-4828-9f10-1a531d40391a
-  - id: Anthropic.claude-code
-    uuid: 3c13ae49-babe-45fe-8c48-5e45077a62bf
   - id: bukas.GBKtoUTF8
     uuid: 51604e47-0bb3-43c0-9226-a74eeca7cd84
   - id: Catppuccin.catppuccin-vsc
@@ -32,7 +32,7 @@ enabled:
     uuid: 61d03280-3919-4dd1-bce1-178ca21fdeaf
   - id: kilocode.kilo-code
     uuid: 849d53b8-0eb4-4e6b-b73f-870eefcbbf1b
-    version: 7.2.31
+    version: 7.2.34
   - id: mhutchie.git-graph
     uuid: 438221f8-1107-4ccd-a6fe-f3b7fe0856b7
   - id: MS-CEINTL.vscode-language-pack-zh-hans
@@ -91,5 +91,7 @@ enabled:
     uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
   - id: Wangguixuan.var-translate-en
     uuid: c81a4220-1c5e-4942-bd68-529abd037a1e
+  - id: yuanzhixiang.claude-code-yolo
+    uuid: b98bd702-7e3d-4984-a0b2-12045ace7b2e
   - id: zokugun.cron-tasks
     uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
